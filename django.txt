@@ -35,10 +35,10 @@ python manage.py runserver
 
 #New django project
 django-admin startproject bookr .
-django-admin startproject core
+
 
 #Create app
-python manage.py startapp departments
+python manage.py startapp reviews
 
 
 
@@ -50,6 +50,7 @@ git commit -S -m "first commit"
 git branch -M main
 git remote add origin https://github.com/snelledre/bookr.git
 git push -u origin main
+
 …or push an existing repository from the command line
 git remote add origin https://github.com/snelledre/bookr.git
 git branch -M main
