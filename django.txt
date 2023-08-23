@@ -1,0 +1,56 @@
+#Maak directory
+mkdir python
+
+#virtual vi windows
+python -m venv venv
+venv\Scripts\activate
+deactivate
+
+#virtual vi mac
+python3.11 -m venv venv
+source venv/bin/activate
+deactivate
+
+
+#upgrade pip
+python -m pip install --upgrade pip
+
+#install django
+pip install django
+
+#generate secretkey
+django-admin shell
+from django.core.management.utils import get_random_secret_key
+print(get_random_secret_key())
+exit()
+
+#activate shell
+pip shell
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+#run the server
+python manage.py runserver
+
+#New django project
+django-admin startproject bookr .
+django-admin startproject core
+
+#Create app
+python manage.py startapp departments
+
+
+
+…or create a new repository on the command line
+
+git init
+git add -A
+git commit -S -m "first commit"
+git branch -M main
+git remote add origin https://github.com/snelledre/bookr.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/snelledre/bookr.git
+git branch -M main
+git push -u origin main
