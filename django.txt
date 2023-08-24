@@ -46,7 +46,7 @@ python manage.py startapp reviews
 
 git init
 git add -A
-git commit -S -m "first commit"
+git commit -S -m "second commit"
 git branch -M main
 git remote add origin https://github.com/snelledre/bookr.git
 git push -u origin main
